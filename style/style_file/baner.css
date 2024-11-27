@@ -1,0 +1,38 @@
+.baner{
+    background-image: url(../../images/main_bg_img_heder.png);
+    height: 600px;
+}
+.baner .logo{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.baner .better{
+    height: 50px;
+    background: var(--color_btn_read_more_hover);
+    width: 500px;
+}
+.baner .better p{
+    text-transform: uppercase;
+    color: var(--color_h1);
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 700;
+    font-family: Roboto_Regular;
+    text-align: center;
+    
+}
+.baner h3{
+    margin-left: 50px;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: var(--color_p_text);
+    font-weight: 500;
+    font-family: Roboto_Regular;
+}
+.baner ul li{
+    margin-left: 50px;
+    font-size: 18px;
+    line-height: 33px;
+    color: #000000;
+    font-family: "Arial Narrow";
+}

@@ -3,3 +3,5 @@
 
 /*! import blocks */
 @import './style_file/header.css';
+@import './style_file/navBar.css';
+@import './style_file/baner.css';
