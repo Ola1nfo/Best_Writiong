@@ -10,6 +10,9 @@
     height: 50px;
     background: var(--color_btn_read_more_hover);
     width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .baner .better p{
     text-transform: uppercase;
@@ -19,20 +22,27 @@
     font-weight: 700;
     font-family: Roboto_Regular;
     text-align: center;
-    
 }
 .baner h3{
+    margin-top: 40px;
     margin-left: 50px;
     font-size: 22px;
     text-transform: uppercase;
     color: var(--color_p_text);
     font-weight: 500;
-    font-family: Roboto_Regular;
+    font-family: Roboto_Bold;
+}
+.baner ul{
+    margin-top: -20px;
 }
 .baner ul li{
     margin-left: 50px;
     font-size: 18px;
     line-height: 33px;
     color: #000000;
-    font-family: "Arial Narrow";
+    font-family: Roboto_Medium;
+}
+.baner ul li::marker {
+    font-size: 30px;
+    color: var(--color_h3);
 }
