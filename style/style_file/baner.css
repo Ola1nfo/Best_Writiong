@@ -83,5 +83,11 @@
     font-weight: 400;
     font-family: Roboto_Regular;
     text-align: center;
+}
+.baner .button_category button:hover,
+.list .paper select:hover{
     cursor: pointer;
+    background-color: var(--color_btn_read_more_hover);
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
