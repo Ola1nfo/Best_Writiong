@@ -1,18 +1,34 @@
-.baner{
-    background-image: url(../../images/main_bg_img_heder.png);
-    height: 600px;
+.baner .row{
+    position: relative;
+}
+.baner .row .img_heder{
+    height: 580px;
+}
+.baner .col-6{
+    position: absolute;
 }
 .baner .logo img{
-    margin-top: 40px;
+    margin-top: 30px;
     margin-bottom: 20px;
 }
 .baner .better{
     height: 50px;
     background: var(--color_btn_read_more_hover);
-    width: 500px;
+    width: 650px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    filter: drop-shadow(2px 3.464px 3.5px #95aeb6);
+}
+.baner .better::after {
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    border-style: solid;
+    border-width: 40px 40px 0 0;
+    border-color: var(--color_btn_read_more_hover) transparent transparent transparent;
 }
 .baner .better p{
     text-transform: uppercase;
@@ -25,24 +41,47 @@
 }
 .baner h3{
     margin-top: 40px;
-    margin-left: 50px;
-    font-size: 22px;
-    text-transform: uppercase;
+    margin-left: 55px;
     color: var(--color_p_text);
     font-weight: 500;
     font-family: Roboto_Bold;
 }
 .baner ul{
     margin-top: -20px;
+    width: 650px;
+    list-style: none;
 }
 .baner ul li{
-    margin-left: 50px;
+    margin-left: 20px;
     font-size: 18px;
-    line-height: 33px;
-    color: #000000;
+    line-height: 30px;
+    color: var(--color_p_text);
     font-family: Roboto_Medium;
+    position: relative;
 }
-.baner ul li::marker {
-    font-size: 30px;
+.baner ul li::before {
+    content: '•';
+    font-size: 35px;
     color: var(--color_h3);
+    position: absolute;
+    left: -20px;
+    top: 2px;
+}
+.baner .button_category{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;   
+}
+.baner .button_category button{
+    width: 230px;
+    height: 35px;
+    background-color: rgba(0,0,0,0);
+    border: 2px solid var(--color_btn_send_message);
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: var(--color_btn_send_message);
+    font-weight: 400;
+    font-family: Roboto_Regular;
+    text-align: center;
+    cursor: pointer;
 }
