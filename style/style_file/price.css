@@ -1,7 +1,14 @@
 .price{
     height: 300px;
+    background: url(
+        ../../images/Bg1-1.svg
+    );
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: var(--color_btn_read_more);
     padding: 10px;
+    padding-bottom: 30px;
+    position: relative;
 }
 .price .container .get_price{
     margin: 20px 60px;
@@ -76,14 +83,57 @@
     background-position: right 10px center;
     background-size: 14px;
     appearance: none;
-    color: transparent;
 }
 .list .paper select option{
     color: var(--color_p_text);
 }
 .list .price_money{
-    margin-top: 30px;
     display: flex;
-    justify-content: ;
-    align-items: flex-end;
+    justify-content: space-between;
+    width: 310px;
+}
+.list .price_money p{
+    font-size: 16px;
+    text-transform: uppercase;
+    color: var(--color_btn_text);
+    font-weight: 400;
+    font-family: Roboto_Regular;
+    margin-top: 70px;
+}
+.list .price_money h2{
+    font-size: 48px;
+    color: var(--color_btn_text);
+    font-weight: 400;
+    font-family: Roboto_Regular;
+}
+.list .price_money span{
+    font-size: 25px;
+}
+.list .order_now{
+    margin-top: 60px;
+    width: 310px;
+    height: 35px;
+    background: var(--color_btn_order_now);
+    width: 310px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.list .order_now::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    border-style: solid;
+    border-width: 20px 20px 0 0;
+    border-color: var(--color_btn_order_now) transparent transparent transparent;
+}
+.list .order_now p{
+    text-transform: uppercase;
+    color: var(--color_btn_text);
+    font-size: 26px;
+    font-weight: 400;
+    font-family: Roboto_Regular;
+    text-align: center;
 }
