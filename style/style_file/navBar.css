@@ -22,7 +22,7 @@ nav ul li a{
     font-family: Roboto_Regular;
     text-align: center;
     text-decoration: none;
-    padding: 13px 17px;
+    padding: 13px 20px;
     position: relative;
 }
 nav ul li::after{
@@ -30,7 +30,7 @@ nav ul li::after{
     border: 2px solid #fff;
     border-radius: 3px;
     position: relative;
-    left: 2px;
+    left: 5px;
     z-index: 0;
 }
 nav ul li:nth-child(9):after{
@@ -39,7 +39,7 @@ nav ul li:nth-child(9):after{
 nav ul li a:hover{
     background: var(--color_btn_send_message_hover);
     color: var(--color_btn_text_hover);
-    box-shadow: -6px 0px 0px var(--color_btn_send_message_hover), -6px 0px 0px var(--color_btn_send_message_hover);
+    box-shadow: -15px 0px 0px var(--color_btn_send_message_hover), 10px 0px 0px var(--color_btn_send_message_hover);
     z-index: 1;
 
 }
