@@ -41,5 +41,5 @@ nav ul li a:hover{
     color: var(--color_btn_text_hover);
     box-shadow: -15px 0px 0px var(--color_btn_send_message_hover), 10px 0px 0px var(--color_btn_send_message_hover);
     z-index: 1;
-
 }
+

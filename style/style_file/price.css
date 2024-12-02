@@ -57,6 +57,11 @@
     font-family: Roboto_Regular;
     margin: 10px 0px 0px 10px;
 }
+.get_price .arrow{
+    position: absolute;
+    right: 400px;
+    width: 29px;
+}
 .price .list{
     margin-left: 90px;
     margin-right: 20px;

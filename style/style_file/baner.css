@@ -7,9 +7,20 @@
 .baner .col-6{
     position: absolute;
 }
+.baner .logo{
+    display: flex;
+    align-items: center;
+}
 .baner .logo img{
     margin-top: 30px;
     margin-bottom: 20px;
+    width: 100px;
+}
+.baner .logo h1{
+    font-size: 56px;
+    margin-left: 20px;
+    margin-top: 50px;
+    font-family: Roboto_Bold;
 }
 .baner .better{
     height: 50px;
