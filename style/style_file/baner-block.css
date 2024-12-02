@@ -1,3 +1,6 @@
+.baner{
+    background-color: #f4f6fa;;
+}
 .baner .row{
     position: relative;
 }
@@ -32,7 +35,7 @@
     position: relative;
     filter: drop-shadow(2px 3.464px 3.5px #95aeb6);
 }
-.baner .better::after {
+.baner .better::after{
     content: '';
     position: absolute;
     bottom: -30px;
@@ -53,14 +56,12 @@
 .baner h3{
     margin-top: 40px;
     margin-left: 55px;
-    color: var(--color_p_text);
     font-weight: 500;
     font-family: Roboto_Bold;
 }
 .baner ul{
     margin-top: -20px;
     width: 650px;
-    list-style: none;
 }
 .baner ul li{
     margin-left: 20px;
@@ -70,33 +71,28 @@
     font-family: Roboto_Medium;
     position: relative;
 }
-.baner ul li::before {
-    content: '•';
-    font-size: 35px;
-    color: var(--color_h3);
-    position: absolute;
-    left: -20px;
-    top: 2px;
+.baner ul li::marker{
+    font-size: 30px;
+    color: var(--color_h2);
 }
 .baner .button_category{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;   
 }
 .baner .button_category button{
     width: 230px;
     height: 35px;
     background-color: rgba(0,0,0,0);
-    border: 2px solid var(--color_btn_send_message);
+    border: 2px solid var(--color_main_1);
     margin-bottom: 15px;
     font-size: 18px;
-    color: var(--color_btn_send_message);
+    color: var(--color_main_1);
     font-weight: 400;
     font-family: Roboto_Regular;
     text-align: center;
 }
-.baner .button_category button:hover,
-.list .paper select:hover{
+.baner .button_category button:hover{
     cursor: pointer;
     background-color: var(--color_btn_read_more_hover);
     transform: scale(1.05);
