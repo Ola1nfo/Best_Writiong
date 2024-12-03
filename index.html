@@ -11,11 +11,11 @@
     <header class="container-fluid">
         <div class="container">
             <div class="row">
-                <div class="col-8 phone">
+                <div class="d-none d-lg-flex col-xl-8 col-lg-12 phone">
                     <span>Sales toll free: <a href="#">1 (877) 894-0925</a></span>
                     <span>Support toll free: <a href="#">1 (888) 901-8317</a></span>
                 </div>
-                <div class="col-4 login_and_chat">
+                <div class="d-none col-xl-4 d-xl-flex login_and_chat">
                     <a href="#" class="login">Login</a>
                     <a href="#" class="live_chat">Live Chat</a>
                 </div>
@@ -25,7 +25,7 @@
     <nav class="container-fluid">
         <div class="container">
             <div class="row">
-                <div class="col-12">
+                <div class="col-xl-12 d-lg-none d-xl-block">
                     <ul>
                         <li><a href="#">home</a></li>
                         <li><a href="#">about as</a></li>
@@ -38,14 +38,20 @@
                         <li><a href="#">blog</a></li>
                     </ul>
                 </div>
+                <div class="col-lg-2 d-xl-none">
+                    <a href="#"><img src="./images/Rectangle.png" alt="menu"></a>
+                </div>
+                <div class="col-lg-10 d-xl-none login_and_chat">
+                    <a href="#" class="login">Login</a>
+                    <a href="#" class="live_chat">Live Chat</a>
+                </div>
             </div>
         </div>
     </nav>
     <div class="container-fluid baner">
-        <div class="container">
+        <div class="container bg-img">
             <div class="row">
-                <img class="img_heder" src="./images/main_bg_img_heder.png" alt="img">
-                <div class="col-6">
+                <div class="col-xl-6 col-lg-8">
                     <div class="logo">
                         <a href="#"><img src="./images/logo_true.png" alt="logo"></a>
                         <h1>CompanyName.org</h1>
@@ -60,19 +66,15 @@
                         <li>Papers tested for plagiarism using systems such as Copyscape plus a validation report</li>
                         <li>A flawless end product in terms of style and grammar</li>
                     </ul>
-                    <div class="button_category">
-                        <button>
-                            Essays & Research Papers
-                        </button>
-                        <button>
-                            Dissertations & Thesess
-                        </button>
-                        <button>
-                            Resumes & CVs
-                        </button>
-                        <button>
-                            Editing & Proofreading
-                        </button>
+                    <div class="row">
+                        <div class="col-6 left">
+                            <a href="#" class="btn">Essays & Research Papers</a>
+                            <a href="#" class="btn">Resumes & CVs</a>
+                        </div>
+                        <div class="col-6">
+                            <a href="#" class="btn">Dissertations & Thesess</a>
+                            <a href="#" class="btn">Editing & Proofreading</a>
+                        </div>
                     </div>
                 </div>
             </div>

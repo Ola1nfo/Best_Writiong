@@ -1,14 +1,24 @@
 .baner{
-    background-color: #f4f6fa;;
+    background-color: #e6edf4;
+    background-image: url(../../images/main_bg_img_heder.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center right;
 }
-.baner .row{
-    position: relative;
+@media screen and (min-width: 1200px) { 
+    .baner{
+        background-image: none;
+    }
+    .baner .bg-img{
+        background-image: url(../../images/main_bg_img_heder.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center right;
+    }
 }
-.baner .row .img_heder{
-    height: 580px;
-}
-.baner .col-6{
-    position: absolute;
+
+.baner a img{
+    margin: 10px 0px;
 }
 .baner .logo{
     display: flex;
@@ -75,24 +85,29 @@
     font-size: 30px;
     color: var(--color_h2);
 }
-.baner .button_category{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;   
-}
-.baner .button_category button{
+.baner .btn{
+    display: block;
     width: 230px;
     height: 35px;
     background-color: rgba(0,0,0,0);
-    border: 2px solid var(--color_main_1);
-    margin-bottom: 15px;
+    border: 1px solid var(--color_main_1);
     font-size: 18px;
+    line-height: 42px;
     color: var(--color_main_1);
     font-weight: 400;
     font-family: Roboto_Regular;
-    text-align: center;
+    text-decoration: none;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.baner .button_category button:hover{
+.baner .left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.baner .btn:hover{
     cursor: pointer;
     background-color: var(--color_btn_read_more_hover);
     transform: scale(1.05);
