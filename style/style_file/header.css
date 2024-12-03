@@ -65,3 +65,21 @@ header .live_chat:hover::after{
 header .login:hover, header .live_chat:hover{
     color: var(--color_btn_text_hover);
 }
+header .head_phone{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .logo{
+    display: flex;
+    align-items: center;
+}
+header .logo img{
+    width: 50px;
+}
+header .logo h1{
+    font-size: 30px;
+    margin-left: 10px;
+    line-height: 25px;
+    font-family: Roboto_Bold;
+}

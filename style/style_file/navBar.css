@@ -99,3 +99,19 @@ nav .live_chat:hover::after{
 nav .login:hover, nav .live_chat:hover{
     color: var(--color_btn_text_hover);
 }
+nav .phone{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+nav .phone span, header .phone a{
+    font-size: 20px;
+    color: #caddea;
+    font-weight: 250;
+    font-family: Roboto_Regular;
+}
+nav .phone a{
+    color: #caddea;
+    text-decoration: none;
+    margin-right: 10px;
+}

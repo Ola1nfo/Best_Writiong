@@ -19,13 +19,22 @@
                     <a href="#" class="login">Login</a>
                     <a href="#" class="live_chat">Live Chat</a>
                 </div>
+                <div class="d-xl-none d-lg-none d-md-flex d-sm-flex head_phone">
+                    <div class="col-lg-6 logo">
+                        <a href="#"><img src="./images/logo_true.png" alt="logo"></a>
+                        <h1>Company<br>Name.org</h1>
+                    </div>
+                    <div class="col-lg-6 menu">
+                        <a href="#"><img src="./images/Rectangle.png" alt="menu"></a>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
     <nav class="container-fluid">
         <div class="container">
             <div class="row">
-                <div class="col-xl-12 d-lg-none d-xl-block">
+                <div class="col-xl-12 d-lg-none d-xl-block d-md-none d-sm-none d-none">
                     <ul>
                         <li><a href="#">home</a></li>
                         <li><a href="#">about as</a></li>
@@ -38,12 +47,16 @@
                         <li><a href="#">blog</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-2 d-xl-none">
+                <div class="col-lg-2 d-xl-none d-md-none d-sm-none d-none d-lg-flex">
                     <a href="#"><img src="./images/Rectangle.png" alt="menu"></a>
                 </div>
-                <div class="col-lg-10 d-xl-none login_and_chat">
+                <div class="col-lg-10 d-xl-none d-md-none d-sm-none d-none d-lg-flex login_and_chat">
                     <a href="#" class="login">Login</a>
                     <a href="#" class="live_chat">Live Chat</a>
+                </div>
+                <div class="d-xl-none d-lg-none d-md-flex phone">
+                    <span>Sales toll free: <a href="#">1 (877) 894-0925</a></span>
+                    <span>Support toll free: <a href="#">1 (888) 901-8317</a></span>
                 </div>
             </div>
         </div>
@@ -52,26 +65,27 @@
         <div class="container bg-img">
             <div class="row">
                 <div class="col-xl-6 col-lg-8">
-                    <div class="logo">
+                    <div class="d-none d-xl-flex d-lg-flex logo">
                         <a href="#"><img src="./images/logo_true.png" alt="logo"></a>
                         <h1>CompanyName.org</h1>
                     </div>
-                    <div class="better">
-                        <p>Things go Better with Us!</p>
-                    </div>
+                    <h2>Things go Better with Us!</h2>
                     <h3>What we offer you:</h3>
-                    <ul>
-                        <li>A dedicated writer who is qualified in your field</li>
-                        <li>Your subject matter analyzed, researched, referenced and written as you instruct</li>
-                        <li>Papers tested for plagiarism using systems such as Copyscape plus a validation report</li>
-                        <li>A flawless end product in terms of style and grammar</li>
-                    </ul>
+                        <ul>
+                            <li>A dedicated writer who is qualified in your field</li>
+                            <li>Your subject matter analyzed, researched, referenced and written as you instruct</li>
+                            <li>Papers tested for plagiarism using systems such as Copyscape plus a validation report</li>
+                            <li>A flawless end product in terms of style and grammar</li>
+                        </ul>
+                        <div class="d-lg-none procent">
+                            <h2>15 <span>% off</span><p>YOUR FIRST ORDER</p></h2>
+                        </div>
                     <div class="row">
-                        <div class="col-6 left">
+                        <div class="col-lg-6 left">
                             <a href="#" class="btn">Essays & Research Papers</a>
                             <a href="#" class="btn">Resumes & CVs</a>
                         </div>
-                        <div class="col-6">
+                        <div class="col-lg-6">
                             <a href="#" class="btn">Dissertations & Thesess</a>
                             <a href="#" class="btn">Editing & Proofreading</a>
                         </div>
@@ -84,14 +98,14 @@
         <div class="container">
             <div class="get_price">
                 <h2>get a price quote</h2>
-                <img class="arrow" src="./images/Arrow.svg" alt="">
-                <div class="procent">
+                <img class="arrow d-none d-xl-flex d-lg-flex" src="./images/Arrow.svg" alt="">
+                <div class="d-none d-xl-flex d-lg-flex procent">
                     <h2>15 <span>% off</span></h2>
                     <p>YOUR FIRST ORDER</p>
                 </div>
             </div>
-            <div class="list">
-                <div class="paper">
+            <div class="row list">
+                <div class="col-4 paper">
                     <p>title of your paper</p>
                     <select name="list" id="">
                         <option disabled selected value="1"></option>
@@ -99,7 +113,7 @@
                         <option value="3">Dolor sit.</option>
                     </select>
                 </div>
-                <div class="paper">
+                <div class="col-4 paper">
                     <p>title of your paper</p>
                     <select name="list" id="">
                         <option disabled selected value="1"></option>
@@ -107,7 +121,7 @@
                         <option value="3">Dolor sit.</option>
                     </select>
                 </div>
-                <div class="paper">
+                <div class="col-4 paper">
                     <p>title of your paper</p>
                     <select name="list" id="">
                         <option disabled selected value="1"></option>
@@ -115,7 +129,7 @@
                         <option value="3">Dolor sit.</option>
                     </select>
                 </div>
-                <div class="paper">
+                <div class="col-4 paper">
                     <p>title of your paper</p>
                     <select name="list" id="">
                         <option disabled selected value="1"></option>
@@ -123,11 +137,11 @@
                         <option value="3">Dolor sit.</option>
                     </select>
                 </div>
-                <div class="price_money">
+                <div class="col-4 price_money">
                     <p>total price</p>
                     <h2>16.99 <span>usd</span></h2>
                 </div>
-                <div class="order_now">
+                <div class="col-4 order_now">
                     <p>order now</p>
                 </div>
             </div>
