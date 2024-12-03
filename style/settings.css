@@ -4,6 +4,7 @@ body{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    background-color: #ebf0f5;
 }
 
 :root{
@@ -12,6 +13,7 @@ body{
     --color_h1: #1b7fd0;
     --color_h2: #1b7fd0;
     --color_h3: #000;
+    --color_h4: #1b7fd0;
     --color_p_text: #000;
 
     --color_btn_read_more: #075da2;

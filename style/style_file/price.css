@@ -65,17 +65,17 @@
 .price .list{
     margin-left: 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
-.list .paper p{
+.list p{
     font-size: 18px;
     color: var(--color_btn_text);
     font-weight: 400;
     font-family: Roboto_Regular;
     text-transform: uppercase;
 }
-.list .paper select{
+.list select{
     width: 310px;
     height: 35px;
     background-color: #e9f7fe;
@@ -88,14 +88,14 @@
     background-size: 14px;
     appearance: none;
 }
-.list .paper select option{
+.list select option{
     color: var(--color_p_text);
 }
-.list .price_money{
+.list .special{
+    width: 310px;
     display: flex;
-    /* width: 310px; */
 }
-.list .price_money p{
+.list .special p{
     font-size: 16px;
     text-transform: uppercase;
     color: var(--color_btn_text);
@@ -103,16 +103,16 @@
     font-family: Roboto_Regular;
     margin-top: 70px;
 }
-.list .price_money h2{
+.list .special h2{
     font-size: 48px;
     color: var(--color_btn_text);
     font-weight: 400;
     font-family: Roboto_Regular;
 }
-.list .price_money span{
+.list .special span{
     font-size: 25px;
 }
-.list .order_now{
+.list .special_block{
     margin-top: 60px;
     width: 310px;
     height: 35px;
@@ -127,7 +127,7 @@
     font-weight: 400;
     font-family: Roboto_Regular;
 }
-.list .order_now::after {
+.list .special_block::after{
     content: '';
     position: absolute;
     bottom: -15px;
@@ -135,4 +135,10 @@
     border-style: solid;
     border-width: 20px 20px 0 0;
     border-color: var(--color_btn_order_now) transparent transparent transparent;
+}
+.list .special_block:hover{
+    background: var(--color_btn_order_now_hover)
+}
+.list .special_block:hover::after{
+    border-color: var(--color_btn_order_now_hover) transparent transparent transparent;
 }

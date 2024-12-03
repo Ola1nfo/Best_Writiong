@@ -1,0 +1,119 @@
+.first_block{
+    background-image: url(../../images/Bg1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+.first_block h2{
+    background-color: var(--color_btn_read_more_hover);
+    width: 100%;
+    height: 65px;
+    filter: drop-shadow(2px 3.464px 3.5px rgba(155,182,190,0.75));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.first_block h2::before{
+    content: '';
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    border-top: 35px solid var(--color_btn_read_more_hover);
+    border-right: 35px solid transparent;
+    position: absolute;
+    top: 65px;
+    left: 0;
+}
+.first_block p{
+    margin-top: 50px;
+    width: 100%;
+    font-family: "Arial Narrow";
+    text-align: left;
+}
+.blocks_element{
+    display: flex; 
+    justify-content: space-between; 
+    align-items: stretch; 
+}
+.blocks_element .element{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+}
+.blocks_element .header_text {
+    flex: 0 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.blocks_element .main_text {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: justify;
+}
+.blocks_element .element .image{
+    position: relative;
+}
+.blocks_element .element .image .default-image{
+    position: absolute;
+}
+.blocks_element .element img{
+    width: 110px;
+    height: 110px;
+}
+.blocks_element .element h4{
+    line-height: 22px;
+    font-weight: 500;
+}
+.blocks_element .element p, ul{
+    font-size: 16px;
+    font-family: "Arial Narrow";
+    margin-top: 0px;
+}
+.blocks_element .element button{
+    width: 120px;
+    height: 35px;   
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    background-color: var(--color_btn_read_more);
+    color: var(--color_btn_text);
+    font-weight: 400;
+    font-family: Roboto_Regular;
+    text-align: center;
+    border: none;
+}
+.blocks_element .element button:hover{
+    background-color: var(--color_btn_read_more_hover);
+    color: var(--color_btn_text_hover);
+    transform: scale(1.03);
+    transition: transform 0.6s ease;
+    cursor: pointer;
+}
+.blocks_element .element:hover{
+    background-color: #fff;
+    filter: drop-shadow(2px 3.464px 3.5px rgba(155,182,190,0.75));
+    transform: scale(1.01);
+    transition: transform 0.6s ease;
+}
+.blocks_element .element:hover .default-image{
+    opacity: 0;
+}
+.first_block .element:hover::before{
+    content: '';
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    border-top: 35px solid #fff;
+    border-right: 35px solid transparent;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+}
