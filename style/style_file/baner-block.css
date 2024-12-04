@@ -91,7 +91,7 @@
     background-color: rgba(0,0,0,0);
     border: 1px solid var(--color_main_1);
     font-size: 18px;
-    line-height: 42px;
+    line-height: 40px;
     color: var(--color_main_1);
     font-weight: 400;
     font-family: Roboto_Regular;
@@ -100,6 +100,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    white-space: nowrap;
 }
 .baner .left{
     display: flex;

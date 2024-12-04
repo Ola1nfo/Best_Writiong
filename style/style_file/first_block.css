@@ -117,3 +117,8 @@
     bottom: -30px;
     left: 0;
 }
+@media screen and (max-width: 1200px){
+    .blocks_element{
+        margin: 0 100px;
+    }
+}
