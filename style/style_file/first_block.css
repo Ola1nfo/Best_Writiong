@@ -69,19 +69,18 @@
     width: 110px;
     height: 110px;
 }
-.blocks_element .element h4,
-.text_image h4{
+.blocks_element .element h4
+.element_fon h4{
     line-height: 22px;
     font-weight: 500;
 }
-.blocks_element .element p, ul,
-.text_image p, ul{
+.blocks_element .element p, ul{
     font-size: 16px;
     font-family: "Arial Narrow";
     margin-top: 0px;
 }
 .blocks_element .element button,
-.text_image button{
+.element_fon button{
     width: 120px;
     height: 35px;   
     font-size: 16px;
@@ -95,7 +94,7 @@
     border: none;
 }
 .blocks_element .element button:hover,
-.text_image button:hover{
+.element_fon button:hover{
     background-color: var(--color_btn_read_more_hover);
     color: var(--color_btn_text_hover);
     transform: scale(1.03);
@@ -109,7 +108,7 @@
     transition: transform 0.6s ease;
 }
 .blocks_element .element:hover .default-image,
-.image:hover .default-image{
+.image_phone .image:hover .default-image{
     opacity: 0;
 }
 .first_block .element:hover::before{
@@ -123,42 +122,48 @@
     bottom: -30px;
     left: 0;
 }
-.text_image{
-    background-color: #fff;
-    filter: drop-shadow(2px 3.464px 3.5px rgba(155,182,190,0.75));
-    transform: scale(1.01);
-    transition: transform 0.6s ease;
-    width: 90%;
-    text-align: center;
-    padding: 10px 30px;
-    margin-top: 40px;
-    max-width: 400px;
-    opacity: 1;
-}
-.text_image::before{
-    content: '';
-    display: inline-block;
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
-    border-bottom: 20px solid #fff;
-    position: absolute;
-    top: -18px;
-    left: 30px;
-}
-.phone_block{
+.image_phone{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.image .default-image:hover .text_image{
-    opacity: 0;
+.image_phone img{
+    margin: 0px 10px;
 }
-.image .hover-image:hover .text_image{
-    opacity: 0;
+.main_fon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-@media screen and (max-width: 1200px){
-    .blocks_element{
-        margin: 0 100px;
-    }
+.element_fon{
+    background-color: #fff;
+    filter: drop-shadow(2px 3.464px 3.5px rgba(155,182,190,0.75));
+    width: 350px;
+    padding: 20px 50px;
+    text-align: center;
+    margin-top: 35px;
+}
+.element_fon::before{
+    content: '';
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid #fff;
+    position: absolute;
+    top: -30px;
+    left: 0;
+}
+.element_fon p{
+    line-height: 25px;
+    font-size: 16px;
+    font-family: "Arial Narrow";
+    margin-top: 0px;
+    text-align: justify;
+}
+.image_phone .image:hover{
+    transform: scale(1.1);
+    transition: transform 0.6s ease;
+    cursor: pointer;
 }
