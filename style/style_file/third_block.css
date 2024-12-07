@@ -1,0 +1,147 @@
+.third_block .list_block h2{
+    margin-bottom: 70px;
+}
+.third_block .arrow-block{
+    height: 55px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    margin-left: 20px;
+}
+.third_block .arrow-block h4{
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #1b7fd0;
+    font-weight: 500;
+    font-family: Roboto_Medium;
+}
+.third_block .arrow-block p{
+    font-size: 59px;
+    line-height: 51px;
+    text-transform: uppercase;
+    color: #caddea;
+    font-weight: 700;
+    font-family: "Rajdhani";
+    text-align: center;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+.third_block .arrow-block::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #caddea;
+}
+.third_block .arrow-block:hover{
+    background-color: #075da2;
+    position: relative;
+    cursor: pointer;
+}
+.third_block .arrow-block:hover::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right:-30px;
+    width: 0;
+    height: 0;
+    border-top: 28px solid transparent;
+    border-bottom: 28px solid transparent;
+    border-left: 30px solid #075da2;
+}
+.third_block .arrow-block:hover::after {
+    opacity: 0;
+}
+.third_block .arrow-block:hover h4{
+    font-size: 22px;
+    color: #ffffff;
+}
+.third_block .arrow-block:hover p{
+    font-size: 49px;
+}
+.third_block .right_block{
+    width: 460px;
+    height: 415px;
+    filter: drop-shadow(2px 3.464px 3.5px rgba(155,182,190,0.75));
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+}
+.third_block .right_block img{
+    width: 120px;
+    height: 120px;
+}
+.third_block .right_block h6{
+    font-size: 18px;
+    line-height: 18px;
+    color: #0983e5;
+    font-family: "Arial Narrow";
+    font-weight: 300;
+}
+.third_block .right_block p{
+    width: 370px;
+    height: 197px;
+    font-size: 18px;
+    color: #000000;
+    font-family: "Arial Narrow";
+    text-align: left;
+    text-align: justify;
+    margin-top: -10px;
+}
+.arrow-block1, .arrow-block2, .arrow-block3,
+.arrow-block4, .arrow-block5, .arrow-block6{
+    position: relative;
+}
+.right_block1{
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 1;
+    margin-right: 20px;
+}
+.right_block2{
+    position: absolute;
+    right: 0;
+    top: -55px;
+    opacity: 0;
+    margin-right: 20px;
+}
+.right_block3{
+    position: absolute;
+    right: 0;
+    top: -110px;
+    opacity: 0;
+    margin-right: 20px;
+}
+.right_block4{
+    position: absolute;
+    right: 0;
+    top: -165px;
+    opacity: 0;
+    margin-right: 20px;
+}
+.right_block5{
+    position: absolute;
+    right: 0;
+    top: -220px;
+    opacity: 0;
+    margin-right: 20px;
+}
+.right_block6{
+    position: absolute;
+    right: 0;
+    top: -300px;
+    opacity: 0;
+    margin-right: 20px;
+}
+.arrow-block1:hover .right_block1, .arrow-block2:hover .right_block2, .arrow-block3:hover .right_block3,
+.arrow-block4:hover .right_block4, .arrow-block5:hover .right_block5, .arrow-block6:hover .right_block6{
+    opacity: 1;
+}
