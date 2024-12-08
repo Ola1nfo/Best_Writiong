@@ -34,10 +34,6 @@
     font-family: "Arial Narrow";
     text-align: left;
 }
-.blocks_element{
-    display: flex; 
-    justify-content: space-between; 
-}
 .blocks_element .element{
     padding: 20px;
     display: flex;
@@ -69,7 +65,7 @@
     height: 110px;
 }
 .blocks_element .element h4
-.element_fon h4{
+.element_phone h4{
     line-height: 22px;
     font-weight: 500;
 }
@@ -79,7 +75,7 @@
     margin-top: 0px;
 }
 .blocks_element .element button,
-.element_fon button{
+.element_phone button{
     width: 120px;
     height: 35px;   
     font-size: 16px;
@@ -93,7 +89,7 @@
     border: none;
 }
 .blocks_element .element button:hover,
-.element_fon button:hover{
+.element_phone button:hover{
     background-color: var(--color_btn_read_more_hover);
     color: var(--color_btn_text_hover);
     transform: scale(1.03);
@@ -124,25 +120,49 @@
 .image_phone{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    height: 450px;
+}
+.image_phone .image{
+    position: relative;
 }
 .image_phone img{
     margin: 0px 10px;
 }
-.main_fon{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.element_fon{
+.element_phone{
     background-color: #fff;
     filter: drop-shadow(2px 3.464px 3.5px rgba(155,182,190,0.75));
-    width: 350px;
     padding: 20px 50px;
     text-align: center;
     margin-top: 35px;
 }
-.element_fon::before{
+.element_phone1{
+    position: absolute;
+    width: 400px;
+    opacity: 0;
+}
+.element_phone2{
+    position: absolute;
+    width: 400px;
+    left: -130px;
+    opacity: 0;
+}
+.element_phone3{
+    position: absolute;
+    width: 400px;
+    left: -260px;
+    opacity: 0;
+}
+.element_phone4{
+    position: absolute;
+    width: 400px;
+    left: -390px;
+    opacity: 0;
+}
+.element_phone1::before,
+.element_phone2::before,
+.element_phone3::before,
+.element_phone4::before{
     content: '';
     display: inline-block;
     width: 0px;
@@ -151,10 +171,21 @@
     border-right: 30px solid transparent;
     border-bottom: 30px solid #fff;
     position: absolute;
-    top: -30px;
-    left: 0;
+    top: -29px;
 }
-.element_fon p{
+.element_phone1::before{
+    left: 35px;
+}
+.element_phone2::before{
+    left: 165px;
+}
+.element_phone3::before{
+    left: 295px;
+}
+.element_phone4::before{
+    left: 420px;
+}
+.element_phone p{
     line-height: 25px;
     font-size: 16px;
     font-family: "Arial Narrow";
@@ -166,11 +197,49 @@
     transition: transform 0.6s ease;
     cursor: pointer;
 }
+.image_phone .image1:hover .element_phone1,
+.image_phone .image2:hover .element_phone2,
+.image_phone .image3:hover .element_phone3,
+.image_phone .image4:hover .element_phone4{
+    opacity: 1;
+}
 @media screen and (max-width: 576px){
     .first_block h2,
     .second_block h2,
     .third_block h2{
         font-size: 20px;
         margin-right: 10px;
+    }
+    .image img{
+        width: 60px;
+        height: 60px;
+    }
+    .element_phone1, .element_phone2,
+    .element_phone3, .element_phone4{
+        width: 200px;
+    }
+    .element_phone2{
+        left: -90px;
+    }
+    .element_phone3{
+        left: -150px;
+    }
+    .element_phone4{
+        left: -230px;
+    }
+    .element_phone1::before{
+        left: 15px;
+    }
+    .element_phone2::before{
+        left: 100px;
+    }
+    .element_phone3::before{
+        left: 160px;
+    }
+    .element_phone4::before{
+        left: 240px;
+    }
+    .image_phone{
+        height: 550px;
     }
 }
