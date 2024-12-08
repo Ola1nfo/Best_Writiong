@@ -64,8 +64,8 @@
     font-size: 49px;
 }
 .third_block .right_block{
-    width: 460px;
-    height: 415px;
+    /* width: 460px; */
+    /* height: 415px; */
     filter: drop-shadow(2px 3.464px 3.5px rgba(155,182,190,0.75));
     background-color: #ffffff;
     display: flex;
@@ -86,7 +86,6 @@
     font-weight: 300;
 }
 .third_block .right_block p{
-    height: 197px;
     font-size: 18px;
     color: #000000;
     font-family: "Arial Narrow";
@@ -103,7 +102,7 @@
     position: absolute;
     right: 0;
     top: 0;
-    opacity: 1;
+    opacity: 0;
     margin-right: 20px;
 }
 .right_block2{
@@ -149,19 +148,6 @@
     display: flex;
     justify-content: center;
 }
-@media screen and (max-width: 1400px) {
-    .third_block .right_block{
-        width: 380px;
-    }
-    .third_block .right_block img{
-       margin-bottom: -20px;
-    }
-}
-@media screen and (max-width: 1200px) {
-    .third_block .arrow-block{
-        width: 520px;
-    }
-}
 @media screen and (max-width: 991px) {
     .third_block .order_now{
         display: block;
@@ -170,47 +156,16 @@
     .arrow-block4:hover .right_block4, .arrow-block5:hover .right_block5, .arrow-block6:hover .right_block6{
     opacity: 0;
 }
-    .arrow-block1:hover .right_block1{
+    .arrow-block1:hover .right_block1, .arrow-block2:hover .right_block2,
+    .arrow-block3:hover .right_block3, .arrow-block4:hover .right_block4,
+    .arrow-block5:hover .right_block5, .arrow-block6:hover .right_block6{
         position: relative;
         right: 0;
         top: 0;
         opacity: 1;
         margin-left: 20px;
     }
-    .arrow-block2:hover .right_block2{
-        position: relative;
-        right: 0;
-        top: 0;
-        opacity: 1;
-        margin-left: 20px;
-    }
-    .arrow-block3:hover .right_block3{
-        position: relative;
-        right: 0;
-        top: 0;
-        opacity: 1;
-        margin-left: 20px;
-    }
-    .arrow-block4:hover .right_block4{
-        position: relative;
-        right: 0;
-        top: 0;
-        opacity: 1;
-        margin-left: 20px;
-    }
-    .arrow-block5:hover .right_block5{
-        position: relative;
-        right: 0;
-        top: 0;
-        opacity: 1;
-        margin-left: 20px;
-        
-    }
-    .arrow-block6:hover .right_block6{
-        position: relative;
-        right: 0;
-        top: 0;
-        opacity: 1;
-        margin-left: 20px;
-    }
+}
+@media screen and (max-width: 576px){
+    
 }
