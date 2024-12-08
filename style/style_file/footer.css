@@ -1,0 +1,92 @@
+footer{
+    background: var(--color_main_2);
+    background-image: url(../../images/Bg1.svg);
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+footer .ulist ul li{
+    font-size: 17px;
+    color: #caddea;
+    font-family: "Arial Narrow";
+}
+.cross{
+    position: relative;
+}
+.cross::after{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #caddea;
+}
+.cross img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #caddea;
+    padding: 5px;
+    z-index: 1;
+    top: 7px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+footer .down-menu ul{
+    margin-top: 30px;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+footer .down-menu ul li a{
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 42px;
+    color: var(--color_btn_text);
+    font-weight: 400;
+    font-family: Roboto_Regular;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 12px;
+    position: relative;
+}
+footer .down-menu ul li::after{
+    content: '';
+    border: 2px solid #fff;
+    border-radius: 3px;
+    position: relative;
+    left: 2px;
+    z-index: 0;
+}
+footer .down-menu ul li a:hover{
+    background: var(--color_btn_send_message_hover);
+    color: var(--color_btn_text_hover);
+    box-shadow: -10px 0px 0px var(--color_btn_send_message_hover), 5px 0px 0px var(--color_btn_send_message_hover);
+    z-index: 1;
+}
+.end{
+    font-size: 16px;
+    color: #caddea;
+    font-family: "Arial Narrow";
+    text-align: center;
+}
+@media screen and (max-width: 1400px) {
+    footer .down-menu ul li a{
+        font-size: 12px;
+    }
+    footer .down-menu ul li a:hover{
+        box-shadow: -10px 0px 0px var(--color_btn_send_message_hover),
+        10px 0px 0px var(--color_btn_send_message_hover);
+    } 
+}
+nav ul li:nth-child(9):after{
+    border: none;
+}
+@media screen and (max-width: 1200px){
+    footer .ulist ul li{
+        font-size: 10px;
+    }
+}
