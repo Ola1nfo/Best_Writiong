@@ -73,6 +73,15 @@ footer .down-menu ul li a:hover{
     font-family: "Arial Narrow";
     text-align: center;
 }
+.phone-text p{
+    font-size: 18px;
+    line-height: 20px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Roboto";
+}
 @media screen and (max-width: 1400px) {
     footer .down-menu ul li a{
         font-size: 12px;
@@ -86,7 +95,24 @@ nav ul li:nth-child(9):after{
     border: none;
 }
 @media screen and (max-width: 1200px){
-    footer .ulist ul li{
-        font-size: 10px;
+    footer .down-menu ul{
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+}
+@media screen and (max-width: 991px){
+    .end{
+        text-align: start;
+    }
+    .end span::after{
+        content: '';
+        border: 2px solid #fff;
+        border-radius: 3px;
+        position: relative;
+        left: 2px;
+        z-index: 0;
+        margin: 10px;
     }
 }
