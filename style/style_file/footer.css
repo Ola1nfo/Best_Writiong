@@ -82,6 +82,42 @@ footer .down-menu ul li a:hover{
     font-weight: 500;
     font-family: "Roboto";
 }
+.img-fixed img{
+    padding: 10px;
+}
+footer .arrow-back{
+    position: fixed;
+    top: 320px;
+    right: 100px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    background-color: #013056;
+    border: 7px solid rgba(155,182,190,0.75);
+    overflow: visible; 
+}
+.chat{
+    position: fixed;
+    top: 100px;
+    right: 100px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    background-color: #1b7fd0;
+    border: 7px solid rgba(155,182,190,0.75);
+    overflow: visible; 
+}
+.login{
+    position: fixed;
+    top: 210px;
+    right: 100px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    background-color: #1b7fd0;
+    border: 7px solid rgba(155,182,190,0.75);
+    overflow: visible; 
+}
 @media screen and (max-width: 1400px) {
     footer .down-menu ul li a{
         font-size: 12px;
