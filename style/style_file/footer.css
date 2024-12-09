@@ -89,8 +89,8 @@ footer .arrow-back{
     position: fixed;
     top: 320px;
     right: 50px;
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     border-radius: 50px;
     background-color: #013056;
     border: 7px solid rgba(155,182,190,0.75);
@@ -100,8 +100,8 @@ footer .arrow-back{
     position: fixed;
     top: 100px;
     right: 50px;
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     border-radius: 50px;
     background-color: #1b7fd0;
     border: 7px solid rgba(155,182,190,0.75);
@@ -111,8 +111,8 @@ footer .login{
     position: fixed;
     top: 210px;
     right: 50px;
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     border-radius: 50px;
     background-color: #1b7fd0;
     border: 7px solid rgba(155,182,190,0.75);
