@@ -88,7 +88,7 @@ footer .down-menu ul li a:hover{
 footer .arrow-back{
     position: fixed;
     top: 320px;
-    right: 100px;
+    right: 50px;
     width: 70px;
     height: 70px;
     border-radius: 50px;
@@ -99,7 +99,7 @@ footer .arrow-back{
 .chat{
     position: fixed;
     top: 100px;
-    right: 100px;
+    right: 50px;
     width: 70px;
     height: 70px;
     border-radius: 50px;
@@ -107,10 +107,10 @@ footer .arrow-back{
     border: 7px solid rgba(155,182,190,0.75);
     overflow: visible; 
 }
-.login{
+footer .login{
     position: fixed;
     top: 210px;
-    right: 100px;
+    right: 50px;
     width: 70px;
     height: 70px;
     border-radius: 50px;
